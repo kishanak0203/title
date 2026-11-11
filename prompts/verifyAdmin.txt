@@ -1,0 +1,8 @@
+navigate to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login and enter username as "Admin" and password as "admin123 
+click on login button
+verify that the page contains "admin" tab and click on admin tab
+verify that the page contains system users
+enter username as "Admin" and select user role as "Admin" and enter employee name as "manda akhil user" and select status as "enabled"
+click search button 
+verify that the page displays the matching record
+close the browser

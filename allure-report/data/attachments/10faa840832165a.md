@@ -1,0 +1,62 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: pom.spec.js >> first book can be added to the cart
+- Location: tests\pom.spec.js:4:5
+
+# Error details
+
+```
+Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://practice.expandtesting.com/bookstore/user/signin", waiting until "load"
+
+```
+
+# Test source
+
+```ts
+  1  | export class BookstorePage {
+  2  |   constructor(page) {
+  3  |     this.page = page;
+  4  |     this.emailInput = page.locator('#email');
+  5  |     this.passwordInput = page.locator('#password');
+  6  |     this.submitButton = page.locator('[type="submit"]');
+  7  |     this.allBooksLink = page.getByRole('link', { name: 'All Books' });
+  8  |     this.productTitles = page.locator('.card-title');
+  9  |     this.addToCartButton = page.locator('.btn.btn-danger');
+  10 |     this.cartLink = page.locator('a').filter({ has: page.locator('img[alt="Cart"]') });
+  11 |     this.cartProductName = page.locator(
+  12 |       '//table[contains(@class, "table")]/tbody/tr/td[2]'
+  13 |     );
+  14 |   }
+  15 |   async signIn(email, password) {
+> 16 |     await this.page.goto('https://practice.expandtesting.com/bookstore/user/signin');
+     |                     ^ Error: page.goto: Target page, context or browser has been closed
+  17 |     await this.emailInput.fill(email);
+  18 |     await this.passwordInput.fill(password);
+  19 |     await this.submitButton.click();
+  20 |     await this.allBooksLink.click();
+  21 |   }
+  22 |   async getFirstProductText() {
+  23 |     return (await this.productTitles.textContent());
+  24 |   }
+  25 |   async addFirstProductToCart(name) {
+  26 |     await this.productTitles.first().click();
+  27 |     await this.addToCartButton.click();
+  28 |   }
+  29 |   async openCart() {
+  30 |     await this.cartLink.click();
+  31 |   }
+  32 | 
+  33 |   async getCartProductText() {
+  34 |     return (await this.cartProductName.first().textContent());
+  35 |   }
+  36 | }
+  37 | 
+```

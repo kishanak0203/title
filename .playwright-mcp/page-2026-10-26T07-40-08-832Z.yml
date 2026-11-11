@@ -1,0 +1,113 @@
+- generic [active] [ref=e1]:
+  - paragraph [ref=e3]:
+    - link "PMP Practice" [ref=e4] [cursor=pointer]:
+      - /url: https://pmp.expandtesting.com/
+    - text: "| Free PMP Certification Mock Exam Test +900 Questions & Quizzes"
+    - link "Hire PM Experts" [ref=e5] [cursor=pointer]
+  - banner [ref=e10]:
+    - navigation "Main navigation" [ref=e11]:
+      - link "SUT" [ref=e12] [cursor=pointer]:
+        - /url: /
+        - 'img "Best Website for Practice Automation Testing: Free UI and REST API Examples and Apps. Using Cypress, Playwright, Selenium, WebdriverIO and Postman." [ref=e13]'
+        - text: Practice
+      - generic [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - button "Demos" [ref=e17] [cursor=pointer]
+          - listitem [ref=e18]:
+            - link "Tools" [ref=e19] [cursor=pointer]:
+              - /url: /#tools
+          - listitem [ref=e20]:
+            - link "Tips" [ref=e21] [cursor=pointer]:
+              - /url: /tips
+          - listitem [ref=e22]:
+            - link "Test Cases" [ref=e23] [cursor=pointer]:
+              - /url: /test-cases
+          - listitem [ref=e24]:
+            - link "API Testing" [ref=e25] [cursor=pointer]:
+              - /url: /notes/api/api-docs/
+          - listitem [ref=e26]:
+            - link "About" [ref=e27] [cursor=pointer]:
+              - /url: /about
+        - list
+        - link "Free ISTQB Mock Exams" [ref=e28] [cursor=pointer]:
+          - /url: https://istqb.expandtesting.com/
+  - main [ref=e29]:
+    - generic [ref=e32]:
+      - insertion:
+        - iframe [ref=e34]
+    - paragraph [ref=e36]:
+      - text: Do you enjoy this platform? ❤️
+      - link "Buy us a coffee" [ref=e37] [cursor=pointer]:
+        - /url: https://www.buymeacoffee.com/expandtesting
+    - generic [ref=e38]:
+      - insertion [ref=e40]:
+        - generic [ref=e43]:
+          - heading "These are topics related to the article that might interest you" [level=2] [ref=e45]: Discover more
+          - link "Source Robotics" [ref=e46] [cursor=pointer]
+          - link "Try Cloud Tools" [ref=e51] [cursor=pointer]
+          - link "Try Dev Tools" [ref=e56] [cursor=pointer]
+          - link "Learn to Code" [ref=e61] [cursor=pointer]
+          - link "Launch a Store" [ref=e66] [cursor=pointer]
+          - link "E-commerce" [ref=e71] [cursor=pointer]
+          - link "Read Economics" [ref=e76] [cursor=pointer]
+          - link "Browse Reference" [ref=e81] [cursor=pointer]
+      - generic [ref=e88]:
+        - navigation "breadcrumb mb-2" [ref=e89]:
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - link "Home" [ref=e92] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e93]:
+              - text: /
+              - link "E-commerce Bookstore Practice Automation" [ref=e94] [cursor=pointer]:
+                - /url: /bookstore
+        - navigation [ref=e95]:
+          - generic [ref=e96]:
+            - link "All Books" [ref=e97] [cursor=pointer]:
+              - /url: /bookstore
+            - link "Cart" [ref=e98] [cursor=pointer]:
+              - /url: /bookstore/cart
+              - img "Cart" [ref=e99]
+            - link "Sign In" [ref=e102] [cursor=pointer]:
+              - /url: /bookstore/user/signin
+        - heading "Sign in" [level=1] [ref=e103]
+        - generic [ref=e104]:
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - generic [ref=e108]: Email
+              - textbox "Email" [ref=e109]:
+                - /placeholder: Enter your email...
+            - generic [ref=e110]:
+              - generic [ref=e111]: Password
+              - textbox "Password" [ref=e112]:
+                - /placeholder: Enter your password...
+            - button "Sign In" [ref=e113] [cursor=pointer]
+          - paragraph [ref=e115]:
+            - text: Haven't had account ?
+            - link "Sign Up!" [ref=e116] [cursor=pointer]:
+              - /url: /bookstore/user/signup
+      - insertion [ref=e118]:
+        - generic [ref=e121]:
+          - heading "These are topics related to the article that might interest you" [level=2] [ref=e123]: Discover more
+          - link "Secure Networks" [ref=e124] [cursor=pointer]
+          - link "Audit Security" [ref=e129] [cursor=pointer]
+          - link "Get Certified" [ref=e134] [cursor=pointer]
+          - link "Hire PM Experts" [ref=e139] [cursor=pointer]
+          - link "Prep for Tests" [ref=e144] [cursor=pointer]
+          - link "Find Study Aids" [ref=e149] [cursor=pointer]
+          - link "Find Schools" [ref=e154] [cursor=pointer]
+          - link "Automation practice website" [ref=e159] [cursor=pointer]
+  - generic [ref=e164]:
+    - insertion:
+      - iframe [ref=e166]
+  - contentinfo [ref=e167]:
+    - generic [ref=e172]:
+      - heading "Practice Test Automation WebSite for Web UI and Rest API" [level=4] [ref=e173]
+      - paragraph [ref=e174]:
+        - text: "Version: e64cd80e | Copyright"
+        - link "Expand Testing" [ref=e175] [cursor=pointer]:
+          - /url: https://expandtesting.com/
+        - text: "2026"
+        - link "Try Cloud Tools" [ref=e176] [cursor=pointer]
+  - generic [ref=e180] [cursor=pointer]
