@@ -27,7 +27,7 @@ await page.locator('#field1').press('Control+C')
 await page.locator('#field2').click()
 await page.locator('#field2').press('Control+V')
 })
-test('dblclick handling', async ({ page }) => {
+test('dblcli handling', async ({ page }) => {
   //launching url
   await page.goto('https://www.amazon.in/');
 //mouse hover
