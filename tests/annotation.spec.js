@@ -1,12 +1,12 @@
 import { test, expect } from '@playwright/test';
 //Use test.only to run the specific test
-test.only('test1', async ({ page }) => {
-  await page.goto('https://practice.expandtesting.com/bookstore/user/signin');
-  await page.locator('#email').fill('kishanmasfj@gmail.com');
-  await page.locator('#password').fill('kishan0203');
-  await page.locator('[type="submit"]').click();
-  await page.getByRole('link', { name: 'All Books' }).click();
-})
+// test.only('test1', async ({ page }) => {
+//   await page.goto('https://practice.expandtesting.com/bookstore/user/signin');
+//   await page.locator('#email').fill('kishanmasfj@gmail.com');
+//   await page.locator('#password').fill('kishan0203');
+//   await page.locator('[type="submit"]').click();
+//   await page.getByRole('link', { name: 'All Books' }).click();
+// })
 
 test('test2', async ({ page }) => {
  await page.goto('https://practice.expandtesting.com/bookstore/user/signin');
